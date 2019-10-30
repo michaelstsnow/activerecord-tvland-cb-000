@@ -4,7 +4,7 @@ class Show < ActiveRecord::Base
   belongs_to :network
 
   def build_network(call_letters:)
-    newtork = Network.new
+    network = Network.new
     network.call_letters=call_letters
     self.network=network
     network.save
