@@ -12,7 +12,7 @@ class Actor < ActiveRecord::Base
         role = r.name + " - " + r.show
         roles.push(role)
       end
-      roles
+    roles
   end
 
 end
