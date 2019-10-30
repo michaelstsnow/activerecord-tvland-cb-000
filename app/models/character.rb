@@ -13,8 +13,4 @@ class Character < ActiveRecord::Base
     show.save
   end
 
-  def build_network
-    puts "2"
-  end
-
 end
