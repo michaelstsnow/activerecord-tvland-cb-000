@@ -13,10 +13,4 @@ class Character < ActiveRecord::Base
     show.save
   end
 
-  def build_network(name)
-    newtork = Network.new
-    network.name=name
-    network.save
-  end
-
 end
