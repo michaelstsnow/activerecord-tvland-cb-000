@@ -14,6 +14,7 @@ class Character < ActiveRecord::Base
   end
 
   def build_network
+    puts "2"
   end
 
 end
