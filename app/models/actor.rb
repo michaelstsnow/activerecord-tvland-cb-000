@@ -8,8 +8,8 @@ class Actor < ActiveRecord::Base
 
   def list_roles
     roles = []
-      for role in self.characters
-        role.name + " - " + role.show
+      for r in self.characters
+        role=r.name + " - " + r.show
       end
   end
 
