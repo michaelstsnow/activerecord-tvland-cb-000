@@ -6,8 +6,8 @@ class Show < ActiveRecord::Base
   def build_network(call_letters:)
     newtork = Network.new
     network.call_letters=call_letters
+    self.network=network
     network.save
-    self.show.network_id=network.id
   end
 
 end
