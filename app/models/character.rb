@@ -16,6 +16,7 @@ class Character < ActiveRecord::Base
   def build_network(call_letters:)
     newtork = Network.new
     network.call_letters=call_letters
+    self.show.network=network
     network.save
   end
 
