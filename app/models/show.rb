@@ -7,6 +7,7 @@ class Show < ActiveRecord::Base
     newtork = Network.new
     network.call_letters=call_letters
     network.save
+    self.show.network_id=network.id
   end
 
 end
