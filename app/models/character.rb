@@ -13,4 +13,7 @@ class Character < ActiveRecord::Base
     show.save
   end
 
+  def build_network
+  end
+
 end
